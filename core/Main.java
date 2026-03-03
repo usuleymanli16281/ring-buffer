@@ -25,6 +25,8 @@ public class Main {
         System.out.println("r2: " + r2.read());
         System.out.println("r2 missed: " + r2.getMissedCount());
 
+        System.out.println("r1 (no new data): " + r1.read());
+
         try {
             buffer.createWriter();
         } catch (Exception ex) {
