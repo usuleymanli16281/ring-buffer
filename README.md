@@ -9,7 +9,7 @@ This project implements a fixed-size Ring Buffer that supports:
 - Independent reader positions
 - Overwriting the oldest data when the buffer is full
 
-The buffer has a fixed capacity N. When the buffer becomes full, new writes overwrite the oldest elements. If a reader is too slow, it may miss some items. This behavior is intentional and required by the specification.
+The buffer has a fixed capacity N. When the buffer becomes full, new writes overwrite the oldest elements. If a reader is too slow, it may miss some items. 
 
 ---
 
@@ -29,7 +29,7 @@ The `RingBuffer` is responsible for:
 
 The buffer stores elements in a fixed-size list. It uses a continuously increasing `writeSequence` to track how many items have been written.
 
-The physical position in the buffer is calculated using:
+The position in the buffer is calculated using:
 
 ```
 index = sequence % capacity;
