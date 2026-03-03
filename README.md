@@ -13,6 +13,26 @@ The buffer has a fixed capacity N. When the buffer becomes full, new writes over
 
 ---
 
+## Project Structure
+
+The repository is organized as follows:
+
+- `core/` – Contains the complete Java implementation:
+  - `RingBuffer.java`
+  - `Writer.java`
+  - `Reader.java`
+  - `Main.java`
+
+- `diagram-images/` – Contains UML diagrams:
+  - Class Diagram
+  - Write() Sequence Diagram
+  - Read() Sequence Diagram
+  - Read() Off-Normal Sequence Diagram
+
+- `README.md` – Project documentation and instructions
+
+---
+
 ## Design Explanation
 
 The system follows clear object-oriented principles. Each class has a specific and well-defined responsibility.
